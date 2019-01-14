@@ -1,49 +1,198 @@
-* { 
+* {
     margin: 0px;
     padding: 0px;
-}
-  
-
-
-/*  HERDAER  */
-
-.slider-container{
-  display: flex;
-  flex-direction: column;
-  
-  border: solid 3px green;
-}
-
-/*  HERDAER  */
-
-/*  BODY  */
-
-/*  SLIDER */
-
-
-
-/*  SLIDER */
-
-/*  PRODUCTOS  */
-  
-
-
-/*  PRODUCTOS  */
-
-/* BODY */
-
-/* FOOTER*/
-.footer{
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
   }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+	background-color:#fafafa;
+  }
+  main {
+      margin: auto;
+  }
+  
+footer {
+    background-color: #bdbdbd ;
+    text-align: center;
+	padding-top:20px;
+	
+}
+   .encabezado {
+       background: url(../images/header_seguridad.jpg); 
+        max-width: 1370px;
+		height:360px;
+	
+        
+    }
+    .encabezado:hover {
+      background: url(../images/header_seguridad.jpg); 
+		height:420px;
+        -moz-transition: 0.4s linear;
+        -webkit-transition: 0.4s ease-out;
+        transition: 0.4s linear;  
+    }
+	 
+	
+	.navbar-nav,a{
+	   
+	   font-size:20px;
+	
+		
+   }
+   .navbar-nav,a:hover{
+	   
+	   font-size:22px;
+	text-decoration:none;
+		
+   }
+   
 
-  .container {
-    min-width: 100vw;
+  
+   .breadcrumb{
+	
+	    background-color:#fafafa;
+	
+	 
+   }
+   .breadcrumb-item,a{
+	  
+		color:#9e9e9e;
+   }
+   .breadcrumb-item,a:hover{
+	  
+		color:#424242 ;
+   }
+ 
+ /* my butonn*/
+ 
+ .my-button-collapse{
+	 padding: 3px;
+	 font-size:17px;
+	
+	 background:#fafafa;
+ }
+	
+	.container {
+    min-width: 90vw;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
     padding: 20px;
-    background-color: red;
-  }
+   background-color: #fafafa;
+   
+   
+}
+	.card-container{
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+}
+	.card {
+    padding: 8px;
+	
+}	
 
-/* FOOTER*/
+	.card:hover {
+    padding: 0px;
+    -moz-transition: .3s linear;
+    -webkit-transition: .3s ease-out;
+    transition: .3s linear;
+}
+
+
+.my-contactos {
+	  display: flex;
+  flex-direction: column;
+
+	 
+	
+}
+
+.redes-logos {
+	margin-top:40px;
+	  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+@media (max-width:1024px){
+
+    .encabezado {
+       background: url(../images/header_seguridad_ipad.jpg); 
+		height:300px;
+    }
+    .encabezado:hover {
+        background: url(../images/header_seguridad_ipad.jpg); 
+		height:321px;
+        -moz-transition: 0.4s linear;
+        -webkit-transition: 0.4s ease-out;
+        transition: 0.4s linear;
+      
+    }
+
+
+
+    .logo {
+        position: relative;
+        top:40px;
+        left: -10px;
+        width: 200px;
+    }
+
+
+  
+}
+
+@media (max-width:768px){
+
+    .encabezado {
+        background: url(../images/header_seguridad_tablet.jpg); 
+		height:240px;
+    }
+    
+
+
+    
+   .navbar-nav,li{
+	   
+	   font-size:19px;
+   }
+    .logo {
+        position: relative;
+        top:40px;
+        left: -30px;
+        width: 200px;
+    }
+
+}
+
+
+
+@media (max-width:500px){
+	.encabezado {
+        background: url(../images/header_seguridad_movil.jpg); 
+		height:158px;
+    }
+
+
+     .navbar-nav,li{
+	   
+	   font-size:15px;
+   }  
+    
+    .logo {
+        position: relative;
+        top:25px;
+        left: -5px;
+        width: 120px;
+    }
+
+
+
+}
